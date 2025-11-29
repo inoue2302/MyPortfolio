@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useState } from 'react';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter, Link } from '@/i18n/routing';
+import { useLocale, useTranslations } from 'next-intl';
 
 interface MainLayoutProps {
   children: React.ReactNode;
@@ -11,15 +11,23 @@ interface MainLayoutProps {
 const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
+  const router = useRouter();
+  const locale = useLocale();
+  const t = useTranslations('nav');
+  const tFooter = useTranslations('footer');
 
   const navItems = [
-    { href: '/', label: 'ホーム' },
-    { href: '/about', label: '自己紹介' },
-    { href: '/skills', label: 'スキル' },
-    { href: '/projects', label: '案件' },
+    { href: '/', label: t('home') },
+    { href: '/about', label: t('about') },
+    { href: '/skills', label: t('skills') },
+    { href: '/projects', label: t('projects') },
   ];
 
   const isActive = (path: string) => pathname === path;
+
+  const changeLocale = (newLocale: string) => {
+    router.replace(pathname, { locale: newLocale });
+  };
 
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-br from-gray-50 to-gray-100">
@@ -31,7 +39,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
             </Link>
 
             {/* デスクトップメニュー */}
-            <div className="hidden md:flex space-x-6">
+            <div className="hidden md:flex items-center space-x-6">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
@@ -46,6 +54,26 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
                   )}
                 </Link>
               ))}
+
+              {/* 言語切り替えボタン */}
+              <div className="flex items-center space-x-2 ml-4">
+                <button
+                  onClick={() => changeLocale('ja')}
+                  className={`px-3 py-1 rounded transition-all duration-300 ${
+                    locale === 'ja' ? 'bg-blue-600 text-white' : 'text-gray-300 hover:text-white'
+                  }`}
+                >
+                  日本語
+                </button>
+                <button
+                  onClick={() => changeLocale('en')}
+                  className={`px-3 py-1 rounded transition-all duration-300 ${
+                    locale === 'en' ? 'bg-blue-600 text-white' : 'text-gray-300 hover:text-white'
+                  }`}
+                >
+                  English
+                </button>
+              </div>
             </div>
 
             {/* モバイルメニューボタン */}
@@ -81,7 +109,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
           {/* モバイルメニュー */}
           <div
             className={`md:hidden overflow-hidden transition-all duration-300 ${
-              isMenuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
+              isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
             }`}
           >
             <div className="pt-4 pb-2 space-y-2">
@@ -99,6 +127,32 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
                   {item.label}
                 </Link>
               ))}
+
+              {/* モバイル用言語切り替え */}
+              <div className="flex items-center space-x-2 pt-2 px-3">
+                <button
+                  onClick={() => {
+                    changeLocale('ja');
+                    setIsMenuOpen(false);
+                  }}
+                  className={`flex-1 px-3 py-2 rounded transition-all duration-300 ${
+                    locale === 'ja' ? 'bg-blue-600 text-white' : 'bg-gray-700 text-gray-300 hover:text-white'
+                  }`}
+                >
+                  日本語
+                </button>
+                <button
+                  onClick={() => {
+                    changeLocale('en');
+                    setIsMenuOpen(false);
+                  }}
+                  className={`flex-1 px-3 py-2 rounded transition-all duration-300 ${
+                    locale === 'en' ? 'bg-blue-600 text-white' : 'bg-gray-700 text-gray-300 hover:text-white'
+                  }`}
+                >
+                  English
+                </button>
+              </div>
             </div>
           </div>
         </nav>
@@ -109,7 +163,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
       </main>
 
       <footer className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-6 text-center">
-        <p className="text-gray-400">&copy; 2025 My Portfolio. All rights reserved.</p>
+        <p className="text-gray-400">{tFooter('copyright')}</p>
       </footer>
     </div>
   );

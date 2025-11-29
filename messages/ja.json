@@ -1,0 +1,52 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "about": "自己紹介",
+    "skills": "スキル",
+    "projects": "案件"
+  },
+  "home": {
+    "title": "ポートフォリオ",
+    "subtitle": "フルスタックエンジニア",
+    "aboutCard": {
+      "title": "自己紹介",
+      "description": "経歴と目標"
+    },
+    "skillsCard": {
+      "title": "スキル",
+      "description": "技術スタック"
+    },
+    "projectsCard": {
+      "title": "案件",
+      "description": "プロジェクト履歴"
+    }
+  },
+  "about": {
+    "title": "自己紹介",
+    "intro": {
+      "text1": "ソーシャルゲーム開発会社での勤務を経て、現在はフリーランスエンジニアとして活動しています。サーバーサイド開発からフロントエンド、ネイティブアプリ開発まで幅広く対応可能です。プロダクトの立ち上げフェーズから関わることが多く、要件定義から設計、開発まで一貫して対応することを得意としています。",
+      "text2": "直近では、Stripeを使用した決済機能のバックエンド開発全般や、生成AIを使用したサービスのインフラ全面リプレイスを担当しました。"
+    },
+    "goals": {
+      "title": "今後の目標",
+      "goal1": "生成AIを使用した開発手法やサービス開発に携わりたいと考えています。",
+      "goal2": "フルスタックの経験を活かして、自分のサービスをリリースしたいと考えています。"
+    }
+  },
+  "skills": {
+    "title": "スキル",
+    "languages": "経験言語",
+    "frameworks": "経験フレームワーク",
+    "infrastructure": "経験インフラ"
+  },
+  "projects": {
+    "title": "経歴",
+    "period": "期間",
+    "role": "役割",
+    "responsibilities": "担当業務",
+    "environment": "開発環境"
+  },
+  "footer": {
+    "copyright": "© 2025 My Portfolio. All rights reserved."
+  }
+}

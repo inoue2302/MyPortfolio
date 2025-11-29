@@ -1,0 +1,52 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects"
+  },
+  "home": {
+    "title": "Portfolio",
+    "subtitle": "Full Stack Engineer",
+    "aboutCard": {
+      "title": "About",
+      "description": "Career and Goals"
+    },
+    "skillsCard": {
+      "title": "Skills",
+      "description": "Tech Stack"
+    },
+    "projectsCard": {
+      "title": "Projects",
+      "description": "Project History"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "intro": {
+      "text1": "After working at a social game development company, I am now a freelance engineer. I can handle a wide range of tasks from server-side development to front-end and native app development. I often get involved from the product launch phase, so I excel at handling everything from requirements definition to design and development.",
+      "text2": "Recently, I was responsible for the entire back-end development of payment features using Stripe and a complete infrastructure replatforming for a service using generative AI."
+    },
+    "goals": {
+      "title": "Future Goals",
+      "goal1": "I want to be involved in development methods and service development using generative AI.",
+      "goal2": "I want to release my own services leveraging my full-stack experience."
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "languages": "Experienced Languages",
+    "frameworks": "Experienced Frameworks",
+    "infrastructure": "Experienced Infrastructure"
+  },
+  "projects": {
+    "title": "Work History",
+    "period": "Period",
+    "role": "Role",
+    "responsibilities": "Responsibilities",
+    "environment": "Development Environment"
+  },
+  "footer": {
+    "copyright": "© 2025 My Portfolio. All rights reserved."
+  }
+}
