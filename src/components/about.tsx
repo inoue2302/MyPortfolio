@@ -25,6 +25,9 @@ const About: React.FC = () => {
             <p className="text-lg">
               {t('intro.text2')}
             </p>
+            <p className="text-lg">
+              {t('intro.text3')}
+            </p>
           </div>
         </div>
 
