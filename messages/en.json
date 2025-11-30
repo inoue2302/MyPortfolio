@@ -32,6 +32,87 @@
       "title": "Future Goals",
       "goal1": "I want to be involved in development methods and service development using generative AI.",
       "goal2": "I want to release my own services leveraging my full-stack experience."
+    },
+    "links": {
+      "title": "Links",
+      "categories": [
+        {
+          "title": "GitHub",
+          "items": [
+            {
+              "label": "ShotaWeb3",
+              "url": "https://github.com/ShotaWeb3"
+            },
+            {
+              "label": "inoue2302",
+              "url": "https://github.com/inoue2302"
+            }
+          ]
+        },
+        {
+          "title": "Zenn",
+          "items": [
+            {
+              "label": "shota_web305",
+              "url": "https://zenn.dev/shota_web305"
+            }
+          ]
+        },
+        {
+          "title": "Qiita",
+          "items": [
+            {
+              "label": "inoue2355",
+              "url": "https://qiita.com/inoue2355"
+            }
+          ]
+        },
+        {
+          "title": "AWS Certified DevOps Engineer - Professional",
+          "items": [
+            {
+              "label": "Credly",
+              "url": "https://www.credly.com/badges/72383b84-8321-4e51-a2d6-423ec23a8d5a/public_url"
+            }
+          ]
+        },
+        {
+          "title": "AWS Solutions Architect Associate",
+          "items": [
+            {
+              "label": "Acclaim",
+              "url": "https://www.youracclaim.com/badges/04b41705-9e59-43da-85a2-4654a88af245/linked_in_profile"
+            }
+          ]
+        },
+        {
+          "title": "AWS Developer Associate",
+          "items": [
+            {
+              "label": "Credly",
+              "url": "https://www.credly.com/badges/ffc659dd-bdcb-4452-8968-85619276005f?source=linked_in_profile"
+            }
+          ]
+        },
+        {
+          "title": "AWS SysOps Administrator Associate",
+          "items": [
+            {
+              "label": "Credly",
+              "url": "https://www.credly.com/badges/b03deb49-349b-487a-ab62-42585d25e0df?source=linked_in_profile"
+            }
+          ]
+        },
+        {
+          "title": "Track Works Full Stack (Advanced) Test",
+          "items": [
+            {
+              "label": "Result Page",
+              "url": "https://job.tracks.run/share/tIBdacXx3/0aa203b2-1948-488c-b69a-bc4607bd2e92"
+            }
+          ]
+        }
+      ]
     }
   },
   "skills": {
