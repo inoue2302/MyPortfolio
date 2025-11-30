@@ -32,6 +32,87 @@
       "title": "今後の目標",
       "goal1": "生成AIを使用した開発手法やサービス開発に携わりたいと考えています。",
       "goal2": "フルスタックの経験を活かして、自分のサービスをリリースしたいと考えています。"
+    },
+    "links": {
+      "title": "関連URL",
+      "categories": [
+        {
+          "title": "GitHub",
+          "items": [
+            {
+              "label": "ShotaWeb3",
+              "url": "https://github.com/ShotaWeb3"
+            },
+            {
+              "label": "inoue2302",
+              "url": "https://github.com/inoue2302"
+            }
+          ]
+        },
+        {
+          "title": "Zenn",
+          "items": [
+            {
+              "label": "shota_web305",
+              "url": "https://zenn.dev/shota_web305"
+            }
+          ]
+        },
+        {
+          "title": "Qiita",
+          "items": [
+            {
+              "label": "inoue2355",
+              "url": "https://qiita.com/inoue2355"
+            }
+          ]
+        },
+        {
+          "title": "AWS認定 DevOps Engineer Professional",
+          "items": [
+            {
+              "label": "Credly",
+              "url": "https://www.credly.com/badges/72383b84-8321-4e51-a2d6-423ec23a8d5a/public_url"
+            }
+          ]
+        },
+        {
+          "title": "AWSソリューションアーキテクトアソシエート認定バッジ",
+          "items": [
+            {
+              "label": "Acclaim",
+              "url": "https://www.youracclaim.com/badges/04b41705-9e59-43da-85a2-4654a88af245/linked_in_profile"
+            }
+          ]
+        },
+        {
+          "title": "AWSデベロッパーアソシエート認定バッジ",
+          "items": [
+            {
+              "label": "Credly",
+              "url": "https://www.credly.com/badges/ffc659dd-bdcb-4452-8968-85619276005f?source=linked_in_profile"
+            }
+          ]
+        },
+        {
+          "title": "AWS SysOpsアドミニストレータ認定バッジ",
+          "items": [
+            {
+              "label": "Credly",
+              "url": "https://www.credly.com/badges/b03deb49-349b-487a-ab62-42585d25e0df?source=linked_in_profile"
+            }
+          ]
+        },
+        {
+          "title": "★【フルスタック＜上級＞（ver.2）Test受験】Track Works",
+          "items": [
+            {
+              "label": "結果ページ",
+              "url": "https://job.tracks.run/share/tIBdacXx3/0aa203b2-1948-488c-b69a-bc4607bd2e92"
+            }
+          ]
+        }
+      ]
     }
   },
   "skills": {
