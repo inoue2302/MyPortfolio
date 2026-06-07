@@ -11,7 +11,8 @@ export const workHistoryJa = [
       "全体のユーザー行動ログ出力処理の実装",
       "メモリ使用量改善によるフロントエンド・バックエンドのパフォーマンス改善",
       "リテラシーテストの受検履歴削除機能の対応",
-      "CS起点の調査・不具合対応"
+      "CS起点の調査・不具合対応",
+      { text: "PR分割手法の立案とチームへの文化浸透を目的に、勉強会での発表と、自動レビュー時にPR分割の要否を判定し分割方法を提案するClaudeスキルを作成・展開", url: "https://zenn.dev/shota_web305/articles/9e3b0969869e0a" }
     ],
     environment: [
       "TypeScript", "Next.js", "NestJS", "Prisma", "Docker", "GAE", "Cloud Run", "GCS", "AlloyDB", "BigQuery", "SendGrid", "Claude Code", "Cursor"
