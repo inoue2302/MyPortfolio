@@ -19,7 +19,7 @@ export const workHistoryEn = [
   },
   {
     title: "Infrastructure Construction for Meeting Minutes Creation Service Using Generative AI",
-    period: "February 2025 ~ Present",
+    period: "February 2025 ~ July 2025",
     role: "Web Application Development Leader",
     responsibilities: [
       "Infrastructure design and construction for microservices of meeting minutes creation",
