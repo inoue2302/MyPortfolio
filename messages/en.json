@@ -25,8 +25,8 @@
     "title": "About Me",
     "intro": {
       "text1": "After working at a social game development company, I am now a freelance engineer. I can handle a wide range of tasks from server-side development to front-end and native app development. I often get involved from the product launch phase, so I excel at handling everything from requirements definition to design and development.",
-      "text2": "Recently, I was responsible for the entire back-end development of payment features using Stripe and a complete infrastructure replatforming for a service using generative AI.",
-      "text3": "I actively leverage AI agents such as Cursor and Cloud Code to boost development efficiency and quality, and this portfolio itself was built with Vibe-Kanban."
+      "text2": "Most recently, I have been doing full-stack development with Next.js + NestJS, using AI-driven development with Claude Code and Cursor.",
+      "text3": "By integrating generative AI into my development workflow, I pursue both efficiency and quality, and this portfolio itself was built with Vibe-Kanban."
     },
     "goals": {
       "title": "Future Goals",
