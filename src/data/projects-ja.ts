@@ -20,7 +20,7 @@ export const workHistoryJa = [
   },
   {
     title: "生成AIを使用した議事録作成サービスのインフラ構築",
-    period: "2025年2月~現在",
+    period: "2025年2月~2025年7月",
     role: "Webアプリケーション開発リーダー",
     responsibilities: [
       "議事録作成のマイクロサービスのインフラ設計・構築",
