@@ -27,9 +27,6 @@ const About: React.FC = () => {
             <p className="text-lg">
               {t('intro.text2')}
             </p>
-            <p className="text-lg">
-              {t('intro.text3')}
-            </p>
           </div>
         </div>
 
@@ -38,10 +35,6 @@ const About: React.FC = () => {
             {t('goals.title')}
           </h3>
           <ul className="space-y-4">
-            <li className="flex items-start group">
-              <span className="text-2xl mr-3 group-hover:scale-125 transition-transform duration-300">🎯</span>
-              <span className="text-lg text-gray-700">{t('goals.goal1')}</span>
-            </li>
             <li className="flex items-start group">
               <span className="text-2xl mr-3 group-hover:scale-125 transition-transform duration-300">🚀</span>
               <span className="text-lg text-gray-700">{t('goals.goal2')}</span>

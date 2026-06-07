@@ -1,5 +1,23 @@
 export const workHistoryEn = [
   {
+    title: "E-Learning Platform New Feature Development for Corporate IT Training",
+    period: "August 2025 ~ Present",
+    role: "Full Stack Engineer",
+    responsibilities: [
+      "Led the full cycle of the training application management feature: requirements gathering from PM, stakeholder interviews with CS and instructors, requirements definition, wireframe creation, design coordination, and front-end/back-end implementation",
+      "Designed and implemented the training basic information setup feature (including pre-study materials, e-learning course, and meeting tool configuration) as part of new instructor-led training functionality",
+      "As an improvement to the existing system, handled the design, infrastructure construction, and implementation of a lecture material upload feature using pre-signed URLs",
+      "Implemented a reminder email notification feature for trainees of instructor-led training sessions",
+      "Implemented user activity log export processing across the entire system",
+      "Improved front-end and back-end performance through memory usage optimization",
+      "Implemented literacy test exam history deletion functionality",
+      "Handled investigation and bug response tasks raised by the CS team"
+    ],
+    environment: [
+      "TypeScript", "Next.js", "NestJS", "Prisma", "Docker", "GAE", "Cloud Run", "GCS", "AlloyDB", "BigQuery", "SendGrid", "Claude Code", "Cursor"
+    ]
+  },
+  {
     title: "Infrastructure Construction for Meeting Minutes Creation Service Using Generative AI",
     period: "February 2025 ~ Present",
     role: "Web Application Development Leader",

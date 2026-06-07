@@ -21,6 +21,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
     { href: '/about', label: t('about') },
     { href: '/skills', label: t('skills') },
     { href: '/projects', label: t('projects') },
+    { href: '/works', label: t('works') },
   ];
 
   const isActive = (path: string) => pathname === path;

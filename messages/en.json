@@ -3,7 +3,8 @@
     "home": "Home",
     "about": "About",
     "skills": "Skills",
-    "projects": "Projects"
+    "projects": "Projects",
+    "works": "Works"
   },
   "home": {
     "title": "Portfolio",
@@ -19,20 +20,28 @@
     "projectsCard": {
       "title": "Projects",
       "description": "Project History"
+    },
+    "worksCard": {
+      "title": "Works",
+      "description": "Personal Products"
     }
   },
   "about": {
     "title": "About Me",
     "intro": {
       "text1": "After working at a social game development company, I am now a freelance engineer. I can handle a wide range of tasks from server-side development to front-end and native app development. I often get involved from the product launch phase, so I excel at handling everything from requirements definition to design and development.",
-      "text2": "Most recently, I have been doing full-stack development with Next.js + NestJS, using AI-driven development with Claude Code and Cursor.",
-      "text3": "By integrating generative AI into my development workflow, I pursue both efficiency and quality, and this portfolio itself was built with Vibe-Kanban."
+      "text2": "Recently, I have been doing full-stack development with Next.js + NestJS using AI-driven tools like Claude Code and Cursor at work, while also independently releasing several AI-powered products."
     },
     "goals": {
       "title": "Future Goals",
-      "goal1": "I want to be involved in development methods and service development using generative AI.",
-      "goal2": "I want to release my own services leveraging my full-stack experience."
+      "goal2": "I aim to develop and launch my own AI-driven original service, and build it into a business as a product owner."
     }
+  },
+  "works": {
+    "title": "Works",
+    "techStack": "Tech Stack",
+    "visitSite": "Visit Site",
+    "article": "Read Article"
   },
   "skills": {
     "title": "Skills",
