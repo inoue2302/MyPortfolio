@@ -5,11 +5,13 @@ import { useTranslations, useLocale } from 'next-intl';
 import { workHistoryJa } from '@/data/projects-ja';
 import { workHistoryEn } from '@/data/projects-en';
 
+type Responsibility = string | { text: string; url: string };
+
 interface ProjectEntryProps {
   title: string;
   period: string;
   role: string;
-  responsibilities: string[];
+  responsibilities: Responsibility[];
   environment: string[];
   index: number;
   isVisible: boolean;
@@ -42,7 +44,14 @@ const ProjectEntry: React.FC<ProjectEntryProps> = ({ title, period, role, respon
           {responsibilities.map((item, idx) => (
             <li key={idx} className="text-gray-700 text-sm flex items-start">
               <span className="mr-2 text-blue-500">▸</span>
-              <span>{item}</span>
+              {typeof item === 'string' ? (
+                <span>{item}</span>
+              ) : (
+                <span>
+                  {item.text}
+                  <a href={item.url} target="_blank" rel="noopener noreferrer" className="ml-2 text-blue-500 hover:text-blue-700 underline text-xs whitespace-nowrap">内容はこちらを参照</a>
+                </span>
+              )}
             </li>
           ))}
         </ul>

@@ -12,7 +12,7 @@ export const workHistoryEn = [
       "Improved front-end and back-end performance through memory usage optimization",
       "Implemented literacy test exam history deletion functionality",
       "Handled investigation and bug response tasks raised by the CS team",
-      "To establish a PR splitting culture, held a study session presentation and developed a Claude skill that automatically determines whether a PR needs to be split and proposes splitting strategies during code review"
+      { text: "To establish a PR splitting culture, held a study session presentation and developed a Claude skill that automatically determines whether a PR needs to be split and proposes splitting strategies during code review", url: "https://zenn.dev/shota_web305/articles/9e3b0969869e0a" }
     ],
     environment: [
       "TypeScript", "Next.js", "NestJS", "Prisma", "Docker", "GAE", "Cloud Run", "GCS", "AlloyDB", "BigQuery", "SendGrid", "Claude Code", "Cursor"
