@@ -22,7 +22,7 @@ export default function Home() {
           {t('subtitle')}
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12 max-w-5xl mx-auto">
           <Link
             href="/about"
             className="group relative overflow-hidden bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
@@ -56,6 +56,18 @@ export default function Home() {
               <div className="text-4xl mb-4">💼</div>
               <h2 className="text-2xl font-bold mb-2">{t('projectsCard.title')}</h2>
               <p className="text-gray-600">{t('projectsCard.description')}</p>
+            </div>
+          </Link>
+
+          <Link
+            href="/works"
+            className="group relative overflow-hidden bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+          >
+            <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-pink-500 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+            <div className="relative z-10">
+              <div className="text-4xl mb-4">🚀</div>
+              <h2 className="text-2xl font-bold mb-2">{t('worksCard.title')}</h2>
+              <p className="text-gray-600">{t('worksCard.description')}</p>
             </div>
           </Link>
         </div>

@@ -17,15 +17,15 @@ const Skills: React.FC = () => {
   ];
 
   const frameworks = [
-    "NestJS", "Laravel", "Lumen", "FastAPI", "Yii", "NuxtJS2.9系 (Nuxt.js 2.9.x)",
-    "VueJS", "NextJS", "ReactNative"
+    "NextJS", "NestJS", "Laravel", "Lumen", "FastAPI", "Yii", "NuxtJS2.9系 (Nuxt.js 2.9.x)",
+    "VueJS", "ReactNative"
   ];
 
   const infrastructure = [
     "EC2", "S3", "CloudFront", "RDS", "RDS for Aurora", "ElasticSearch",
     "API Gateway", "Lambda", "ElastiCache", "ECS", "Docker", "AWSConfig",
     "AWSWAF", "Amazon CloudWatch Synthetics", "SendGrid", "AWSCdkV2",
-    "AWSCopilot", "Vercel"
+    "AWSCopilot", "Vercel", "GCP（GAE / Cloud Run / BigQuery / AlloyDB / GCS）"
   ];
 
   const SkillBadge = ({ skill, index }: { skill: string; index: number }) => (
