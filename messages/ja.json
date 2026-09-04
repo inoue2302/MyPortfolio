@@ -34,6 +34,7 @@
     },
     "goals": {
       "title": "今後の目標",
+      "goal1": "これまでの開発経験を生かし、新しい技術だけを目的にするのではなく、システムを使う人に近い立場で、使われるシステムの運用・改善に携わることを目指しています。",
       "goal2": "AIを核に据えたオリジナルサービスを自ら開発・リリースし、プロダクトオーナーとして事業を作り上げることを目指しています。"
     },
     "links": {
@@ -135,7 +136,8 @@
     "period": "期間",
     "role": "役割",
     "responsibilities": "担当業務",
-    "environment": "開発環境"
+    "environment": "開発環境",
+    "aiUsage": "AI利用状況"
   },
   "footer": {
     "copyright": "© 2025 My Portfolio. All rights reserved."

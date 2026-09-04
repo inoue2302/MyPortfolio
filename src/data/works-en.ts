@@ -17,4 +17,12 @@ export const worksEn = [
     articleUrl: "https://zenn.dev/shota_web305/articles/meow-meeting-streaming",
     status: "Live",
   },
+  {
+    name: "FightScope",
+    description: "A combat sports fight-breakdown site. Based on my own fight viewing and AI-assisted analysis of past bouts, I publish pre-fight predictions of how each match will unfold, along with a post-fight review of what actually happened.",
+    techStack: ["Next.js 14", "React 18", "TypeScript", "three.js", "Vercel"],
+    siteUrl: "https://fightscope.vercel.app/",
+    youtubeUrl: "https://www.youtube.com/@FightScopeOfficial-y9w",
+    status: "Live",
+  },
 ];

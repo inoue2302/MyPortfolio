@@ -15,8 +15,22 @@ export const workHistoryJa = [
       { text: "PR分割手法の立案とチームへの文化浸透を目的に、勉強会での発表と、自動レビュー時にPR分割の要否を判定し分割方法を提案するClaudeスキルを作成・展開", url: "https://zenn.dev/shota_web305/articles/9e3b0969869e0a" }
     ],
     environment: [
-      "TypeScript", "Next.js", "NestJS", "Prisma", "Docker", "GAE", "Cloud Run", "GCS", "AlloyDB", "BigQuery", "SendGrid", "Claude Code", "Cursor"
-    ]
+      "TypeScript", "Next.js", "NestJS", "Prisma", "Docker", "GAE", "Cloud Run", "GCS", "AlloyDB", "BigQuery", "SendGrid", "Claude Code"
+    ],
+    aiUsage: {
+      summary: "現在は開発の全工程をClaude Codeで進めるAIネイティブな開発スタイル",
+      items: [
+        { phase: "仕様策定", text: "仕様書のマークダウン作成" },
+        { phase: "仕様策定", text: "Artifactを使用したワイヤーフレームの作成" },
+        { phase: "設計", text: "具体的な設計書の作成、PR分割提案" },
+        { phase: "実装", text: "仕様書からの実装、PR発行、PR修正" },
+        { phase: "開発フロー", text: "git worktreeを使用した複数タスクの並列開発" },
+        { phase: "レビュー", text: "独自スキルによるPRのAIレビュー" },
+        { phase: "レビュー", text: "PRレビューの指摘内容をCLAUDE.mdの独自ルールとして蓄積し、次回以降の実装・レビューに反映" },
+        { phase: "テスト", text: "Claude in Chromeと連携した手動テスト・E2Eテストの実施" },
+        { phase: "テスト", text: "単体テスト・結合テストの実装" }
+      ]
+    }
   },
   {
     title: "生成AIを使用した議事録作成サービスのインフラ構築",
@@ -36,7 +50,15 @@ export const workHistoryJa = [
       "Docker", "TypeScript (CDK, Frontend)", "Python (WebAPI, 議事録処理)",
       "FastAPI", "NextJS", "CDKv2", "ECS", "RDS", "Cognito", "APIGateWay", "ALB",
       "NLB", "Codebuild", "Amplify", "CloudFront", "S3", "Lambda", "SQS"
-    ]
+    ],
+    aiUsage: {
+      summary: "AIエージェント普及前のため、実装補助・技術調査を中心に活用",
+      items: [
+        { phase: "技術調査", text: "ChatGPTを使用した技術調査" },
+        { phase: "実装", text: "GitHub Copilotによる実装調査とサジェスチョンを活用した実装" },
+        { phase: "レビュー", text: "Copilotによる自動PRレビュー" }
+      ]
+    }
   },
   {
     title: "LINE連携型ECサービスの開発",
@@ -55,7 +77,15 @@ export const workHistoryJa = [
     environment: [
       "Docker", "TypeScript", "NextJS", "Vercel", "NestJS", "ECS", "RDS",
       "Stripe", "AWSCDkV2", "AWSCopilot", "LINELogin", "LINE", "MessageAPI"
-    ]
+    ],
+    aiUsage: {
+      summary: "エディタ統合型AIによる実装補助と、AIによる自動レビューを活用",
+      items: [
+        { phase: "技術調査", text: "Cursorのチャットを使用した技術調査" },
+        { phase: "実装", text: "Cursorのサジェスチョンによる実装と、Composerを使用した自動実装" },
+        { phase: "レビュー", text: "CodeRabbitによる自動PRレビュー" }
+      ]
+    }
   },
   {
     title: "医療関連サービス企業",
