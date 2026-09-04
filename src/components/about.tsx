@@ -36,6 +36,10 @@ const About: React.FC = () => {
           </h3>
           <ul className="space-y-4">
             <li className="flex items-start group">
+              <span className="text-2xl mr-3 group-hover:scale-125 transition-transform duration-300">🎯</span>
+              <span className="text-lg text-gray-700">{t('goals.goal1')}</span>
+            </li>
+            <li className="flex items-start group">
               <span className="text-2xl mr-3 group-hover:scale-125 transition-transform duration-300">🚀</span>
               <span className="text-lg text-gray-700">{t('goals.goal2')}</span>
             </li>
