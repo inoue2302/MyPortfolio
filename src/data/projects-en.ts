@@ -15,8 +15,22 @@ export const workHistoryEn = [
       { text: "To establish a PR splitting culture, held a study session presentation and developed a Claude skill that automatically determines whether a PR needs to be split and proposes splitting strategies during code review", url: "https://zenn.dev/shota_web305/articles/9e3b0969869e0a" }
     ],
     environment: [
-      "TypeScript", "Next.js", "NestJS", "Prisma", "Docker", "GAE", "Cloud Run", "GCS", "AlloyDB", "BigQuery", "SendGrid", "Claude Code", "Cursor"
-    ]
+      "TypeScript", "Next.js", "NestJS", "Prisma", "Docker", "GAE", "Cloud Run", "GCS", "AlloyDB", "BigQuery", "SendGrid", "Claude Code"
+    ],
+    aiUsage: {
+      summary: "AI-native development style, currently running the entire development process with Claude Code",
+      items: [
+        { phase: "Spec", text: "Writing specification documents in Markdown" },
+        { phase: "Spec", text: "Creating wireframes using Artifacts" },
+        { phase: "Design", text: "Writing detailed design documents and proposing PR splitting strategies" },
+        { phase: "Implementation", text: "Implementing features from specifications, raising PRs, and applying review feedback" },
+        { phase: "Dev Flow", text: "Parallel development of multiple tasks using git worktrees" },
+        { phase: "Review", text: "AI-powered PR reviews using a custom-built skill" },
+        { phase: "Review", text: "Accumulating PR review feedback as custom rules in CLAUDE.md, feeding them back into subsequent implementation and reviews" },
+        { phase: "Testing", text: "Manual and E2E testing in coordination with Claude in Chrome" },
+        { phase: "Testing", text: "Writing unit and integration tests" }
+      ]
+    }
   },
   {
     title: "Infrastructure Construction for Meeting Minutes Creation Service Using Generative AI",
@@ -36,7 +50,15 @@ export const workHistoryEn = [
       "Docker", "TypeScript (CDK, Frontend)", "Python (WebAPI, Meeting Minutes Processing)",
       "FastAPI", "NextJS", "CDKv2", "ECS", "RDS", "Cognito", "APIGateWay", "ALB",
       "NLB", "Codebuild", "Amplify", "CloudFront", "S3", "Lambda", "SQS"
-    ]
+    ],
+    aiUsage: {
+      summary: "Before AI agents became widespread, mainly used for implementation assistance and technical research",
+      items: [
+        { phase: "Research", text: "Technical research using ChatGPT" },
+        { phase: "Implementation", text: "Implementation using GitHub Copilot for code exploration and suggestions" },
+        { phase: "Review", text: "Automated PR reviews with Copilot" }
+      ]
+    }
   },
   {
     title: "Development of LINE-integrated EC Service",
@@ -55,7 +77,15 @@ export const workHistoryEn = [
     environment: [
       "Docker", "TypeScript", "NextJS", "Vercel", "NestJS", "ECS", "RDS",
       "Stripe", "AWSCDkV2", "AWSCopilot", "LINELogin", "LINE", "MessageAPI"
-    ]
+    ],
+    aiUsage: {
+      summary: "Used editor-integrated AI for implementation assistance, along with automated AI code review",
+      items: [
+        { phase: "Research", text: "Technical research using Cursor chat" },
+        { phase: "Implementation", text: "Implementation with Cursor suggestions and automated implementation using Composer" },
+        { phase: "Review", text: "Automated PR reviews with CodeRabbit" }
+      ]
+    }
   },
   {
     title: "Medical-related Service Company",

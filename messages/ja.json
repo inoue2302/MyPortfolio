@@ -135,7 +135,8 @@
     "period": "期間",
     "role": "役割",
     "responsibilities": "担当業務",
-    "environment": "開発環境"
+    "environment": "開発環境",
+    "aiUsage": "AI利用状況"
   },
   "footer": {
     "copyright": "© 2025 My Portfolio. All rights reserved."

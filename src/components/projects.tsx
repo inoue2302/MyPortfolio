@@ -7,18 +7,29 @@ import { workHistoryEn } from '@/data/projects-en';
 
 type Responsibility = string | { text: string; url: string };
 
+interface AiUsageItem {
+  phase: string;
+  text: string;
+}
+
+interface AiUsage {
+  summary: string;
+  items: AiUsageItem[];
+}
+
 interface ProjectEntryProps {
   title: string;
   period: string;
   role: string;
   responsibilities: Responsibility[];
   environment: string[];
+  aiUsage?: AiUsage;
   index: number;
   isVisible: boolean;
   t: any;
 }
 
-const ProjectEntry: React.FC<ProjectEntryProps> = ({ title, period, role, responsibilities, environment, index, isVisible, t }) => {
+const ProjectEntry: React.FC<ProjectEntryProps> = ({ title, period, role, responsibilities, environment, aiUsage, index, isVisible, t }) => {
   return (
     <div
       className={`mb-8 p-6 border border-gray-200 rounded-2xl shadow-lg bg-gradient-to-br from-white to-gray-50 hover:shadow-2xl hover:scale-[1.02] transition-all duration-500 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}
@@ -56,6 +67,28 @@ const ProjectEntry: React.FC<ProjectEntryProps> = ({ title, period, role, respon
           ))}
         </ul>
       </div>
+      {aiUsage && aiUsage.items.length > 0 && (
+        <div className="mb-4 bg-emerald-50 p-4 rounded-lg">
+          <h4 className="text-md font-semibold text-emerald-900 mb-2 flex items-center">
+            <span className="mr-2">🤖</span>
+            {t('aiUsage')}:
+          </h4>
+          {aiUsage.summary && (
+            <p className="text-sm font-medium text-emerald-800 mb-3">{aiUsage.summary}</p>
+          )}
+          <ul className="space-y-2 ml-6">
+            {aiUsage.items.map((item, idx) => (
+              <li key={idx} className="text-gray-700 text-sm flex items-start">
+                <span className="mr-2 text-emerald-500">▸</span>
+                <span className="mr-2 shrink-0 w-24 text-center bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded-full font-medium">
+                  {item.phase}
+                </span>
+                <span>{item.text}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
       <div className="bg-purple-50 p-4 rounded-lg">
         <h4 className="text-md font-semibold text-purple-900 mb-2 flex items-center">
           <span className="mr-2">🛠️</span>

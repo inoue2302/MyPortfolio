@@ -135,7 +135,8 @@
     "period": "Period",
     "role": "Role",
     "responsibilities": "Responsibilities",
-    "environment": "Development Environment"
+    "environment": "Development Environment",
+    "aiUsage": "AI Utilization"
   },
   "footer": {
     "copyright": "© 2025 My Portfolio. All rights reserved."
