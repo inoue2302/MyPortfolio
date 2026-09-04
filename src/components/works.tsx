@@ -5,6 +5,17 @@ import { useTranslations, useLocale } from 'next-intl';
 import { worksJa } from '@/data/works-ja';
 import { worksEn } from '@/data/works-en';
 
+interface Work {
+  name: string;
+  description: string;
+  techStack: string[];
+  siteUrl: string;
+  githubUrl?: string;
+  youtubeUrl?: string;
+  articleUrl?: string;
+  status: string;
+}
+
 const Works: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
   const t = useTranslations('works');
@@ -14,7 +25,7 @@ const Works: React.FC = () => {
     setIsVisible(true);
   }, []);
 
-  const works = locale === 'ja' ? worksJa : worksEn;
+  const works: Work[] = locale === 'ja' ? worksJa : worksEn;
 
   return (
     <section id="works" className="max-w-5xl mx-auto">
@@ -62,22 +73,36 @@ const Works: React.FC = () => {
                 >
                   {t('visitSite')} ↗
                 </a>
-                <a
-                  href={work.githubUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-1 bg-gray-800 hover:bg-gray-900 text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors duration-200"
-                >
-                  GitHub ↗
-                </a>
-                <a
-                  href={work.articleUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-1 border border-gray-300 hover:border-gray-400 text-gray-700 hover:text-gray-900 text-sm font-medium px-4 py-2 rounded-lg transition-colors duration-200"
-                >
-                  {t('article')} ↗
-                </a>
+                {work.githubUrl && (
+                  <a
+                    href={work.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1 bg-gray-800 hover:bg-gray-900 text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors duration-200"
+                  >
+                    GitHub ↗
+                  </a>
+                )}
+                {work.youtubeUrl && (
+                  <a
+                    href={work.youtubeUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1 bg-red-600 hover:bg-red-700 text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors duration-200"
+                  >
+                    YouTube ↗
+                  </a>
+                )}
+                {work.articleUrl && (
+                  <a
+                    href={work.articleUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1 border border-gray-300 hover:border-gray-400 text-gray-700 hover:text-gray-900 text-sm font-medium px-4 py-2 rounded-lg transition-colors duration-200"
+                  >
+                    {t('article')} ↗
+                  </a>
+                )}
               </div>
             </div>
           ))}

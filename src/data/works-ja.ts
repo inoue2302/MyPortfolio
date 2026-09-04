@@ -17,4 +17,12 @@ export const worksJa = [
     articleUrl: "https://zenn.dev/shota_web305/articles/meow-meeting-streaming",
     status: "公開中",
   },
+  {
+    name: "FightScope",
+    description: "格闘技の展開予想サイト。自らの試合視聴とAIによる過去試合の分析をもとに、試合前の展開予想と試合後の答え合わせを掲載しています。",
+    techStack: ["Next.js 14", "React 18", "TypeScript", "three.js", "Vercel"],
+    siteUrl: "https://fightscope.vercel.app/",
+    youtubeUrl: "https://www.youtube.com/@FightScopeOfficial-y9w",
+    status: "公開中",
+  },
 ];
